@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Cat + food</title>
+</head>
+<body>
+    <div id="wrapper-1">
+        <h1 class="visually-hidden">Здесь происходит кормление котиков</h1>
+        <p >Давай оценим насколько ты добрый человек :D</p>
+        <p>Правила игры: перед тобой будут появляться котики,ты решаешь кормить его или нет</p>
+        <button id="button-start">Начнём?</button>
+    </div>
+    <div id="wrapper-2">
+        <p class="cat-number">Котик номер <span id="number-of-cat">1</span></p>
+        <img src="img/cat-1.jpg" alt="кот которого надо покормить или пнуть" id="img">
+        <div class="wrapper-but">
+            <button id="kick" class="but kick">Пнуть</button>
+            <button id="feed" class="but feed">Покормить</button>
+        </div>
+        <progress id="scale" max="10" value="0"></progress>
+    </div>
+</body>
+</html>
