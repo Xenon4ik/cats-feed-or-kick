@@ -20,15 +20,23 @@ body{
     background-color:rgb(195, 36, 171);
     color:rgb(237, 197, 137);
 }
-#button-start, #kick, #feed, #continue{
+#kick, #feed {
     color:rgb(237, 197, 137);
     background-color: blueviolet;
     font-size:30px;
-    border: 5px solid black;
-}
+    border: 5px solid black;}
 .cat-number{
     font-size:30px;
 }
 .wrapper-but{
     margin:10px;
+}
+#button-start{
+    color:rgb(237, 197, 137);
+    background-color: blueviolet;
+    font-size:30px;
+    border: 5px solid black;
+    transition: transform 0.3s;}
+#button-start:hover {
+    transform: translateY(-5px);
 }
