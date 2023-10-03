@@ -36,7 +36,11 @@ body{
     background-color: blueviolet;
     font-size:30px;
     border: 5px solid black;
-    transition: transform 0.3s;}
+    transition: all 0.3s;
+}
 #button-start:hover {
     transform: translateY(-5px);
+    background-color: rgb(237, 197, 137);
+    color:blueviolet;
+    border:5px solid blueviolet;
 }
