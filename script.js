@@ -4,7 +4,7 @@ const wrap2 = document.getElementById('wrapper-2')
 const scale = document.getElementById('scale')
 const kickBut = document.getElementById('kick')
 const feedBut = document.getElementById('feed')
-let number = document.getElementById('number-of-cat')
+
 
 
 startButton.onclick = function(){
@@ -14,7 +14,9 @@ startButton.onclick = function(){
 
 feedBut.addEventListener('click', function(){
     scale.value += 1;
+    let number = document.querySelector('.number-of-cat');
     let result = Number(number.innerHTML) + 1;
+    number.innerHTML = result;
     wrap2.innerHTML = `<p class="cat-number">Котик номер <span class="number-of-cat">${result}</span></p>
     <img src="img/cat-${result}.jpg" alt="кот которого надо покормить или пнуть" id="img">
     <div class="wrapper-but">
@@ -23,12 +25,14 @@ feedBut.addEventListener('click', function(){
     </div>
     <progress id="scale" max="10" value="${scale.value}"></progress>`
     
-})
+});
 
 
-kickBut.addEventListener('click',function(){
+kickBut.addEventListener('click', function(){
     scale.value -= 1;
+    let number = document.querySelector('.number-of-cat');
     let result = Number(number.innerHTML) + 1;
+    number.innerHTML = result;
     wrap2.innerHTML = `<p class="cat-number">Котик номер <span class="number-of-cat">${result}</span></p>
     <img src="img/cat-${result}.jpg" alt="кот которого надо покормить или пнуть" id="img">
     <div class="wrapper-but">
