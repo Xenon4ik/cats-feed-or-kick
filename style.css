@@ -16,6 +16,13 @@
     justify-content: center;
 
 }
+#wrapper-3{
+    display:none;
+    font-size:30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 body{
     background-color:rgb(195, 36, 171);
     color:rgb(237, 197, 137);
